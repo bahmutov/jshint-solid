@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Tells how solid your jshint settings are",
   "main": "index.js",
+  "bin": {
+    "jshint-solid": "./index.js"
+  },
   "scripts": {
     "test": "node ./index.js"
   },
