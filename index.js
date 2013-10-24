@@ -76,6 +76,6 @@ function jshintQuality(filename) {
 if (module.parent) {
   module.exports = jshintQuality;
 } else {
-  jshintQuality();
+  jshintQuality(process.argv[2]);
 }
 
