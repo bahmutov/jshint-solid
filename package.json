@@ -1,6 +1,6 @@
 {
   "name": "jshint-solid",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Tells how solid your jshint settings are",
   "main": "index.js",
   "bin": {
