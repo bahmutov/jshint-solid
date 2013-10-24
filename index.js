@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 var fs = require('fs');
+var path = require('path');
 var check = require('check-types');
 var S = require('string');
 
@@ -13,7 +14,8 @@ function removeComments(src) {
 }
 
 function getAllSettings() {
-  var allSettingsSrc = fs.readFileSync('./allJsHintSettings.js', 'utf-8');
+  var filename = path.join(__dirname, 'allJsHintSettings.js');
+  var allSettingsSrc = fs.readFileSync(filename, 'utf-8');
   var withoutComments = removeComments(allSettingsSrc);
   check.verifyUnemptyString(withoutComments, 'expected string without comments');
   var allSettings = JSON.parse(withoutComments);
