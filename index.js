@@ -45,18 +45,37 @@ function settingsPercentage(projectJshintSettings) {
   return (specifiedSettings / totalSettings * 100).toPrecision(2);
 }
 
-var jshintFilename = './.jshintrc';
-if (!fs.existsSync(jshintFilename)) {
-  check.verifyUnemptyString(jshintFilename, 'expected jshint filename');
-  throw new Error('Cannot find jshint settings file ' + jshintFilename);
-}
-var settings = JSON.parse(fs.readFileSync(jshintFilename, 'utf-8'));
-check.verifyObject(settings, 'expected jshint settings object');
+function printMessage(quality, filename) {
+  console.assert(quality >= 0 && quality <= 100, 'invalid quality value ' + quality);
 
-var quality = settingsPercentage(settings);
-console.assert(quality >= 0 && quality <= 100, 'invalid quality value ' + quality);
-console.log('jshint', jshintFilename, 'covers', quality + '% of all possible settings');
-if (quality < 75) {
-  console.log('see all possible settings at\n' +
-    'https://raw.github.com/jshint/jshint/master/examples/.jshintrc');
+  filename = filename || '';
+  console.log('jshint %s covers %d% of all possible settings',
+    filename, quality);
+  if (quality < 75) {
+    console.log('see all possible settings at\n' +
+      'https://raw.github.com/jshint/jshint/master/examples/.jshintrc');
+  }
 }
+
+function jshintQuality(filename) {
+  var jshintFilename = filename || './.jshintrc';
+  if (!fs.existsSync(jshintFilename)) {
+    check.verifyUnemptyString(jshintFilename, 'expected jshint filename');
+    throw new Error('Cannot find jshint settings file ' + jshintFilename);
+  }
+  var settings = JSON.parse(fs.readFileSync(jshintFilename, 'utf-8'));
+  check.verifyObject(settings, 'expected jshint settings object');
+
+  var quality = settingsPercentage(settings);
+  console.assert(quality >= 0 && quality <= 100, 'invalid quality value ' + quality);
+
+  printMessage(quality, jshintFilename);
+  return quality;
+}
+
+if (module.parent) {
+  module.exports = jshintQuality;
+} else {
+  jshintQuality();
+}
+
