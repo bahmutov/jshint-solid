@@ -1,0 +1,20 @@
+{
+  "name": "jshint-solid",
+  "version": "0.0.0",
+  "description": "Tells how solid your jshint settings are",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jshint",
+    "solid",
+    "quality",
+    "measurement"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "check-types": "~0.7.2"
+  }
+}
