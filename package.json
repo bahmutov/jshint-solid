@@ -1,6 +1,6 @@
 {
   "name": "jshint-solid",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Tells how solid your jshint settings are",
   "main": "index.js",
   "bin": {
@@ -18,7 +18,7 @@
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "check-types": "~0.7.2",
+    "check-types": "~0.8.1",
     "string": "~1.6.0"
   },
   "repository": {
