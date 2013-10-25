@@ -2,11 +2,11 @@
 
 How solid is your jshint settings file? Does it specify all settings?
 
-[![NPM info][nodei.co]](https://npmjs.org/package/jshint-solid)
+[![NPM][jshint-solid-icon]][jshint-solid-url]
 
-[![Build status][ci-image]][ci-url]
-[![dependencies][dependencies-image]][dependencies-url]
-[![devdependencies][devdependencies-image]][devdependencies-url]
+[![Build status][jshint-solid-ci-image]][jshint-solid-ci-url]
+[![dependencies][jshint-solid-dependencies-image]][jshint-solid-dependencies-url]
+[![devdependencies][jshint-solid-devdependencies-image]][jshint-solid-devdependencies-url]
 [![endorse][endorse-image]][endorse-url]
 
 ## Installation and use
@@ -36,12 +36,13 @@ License: MIT - do anything with the code, but don't blame me if it does not work
 
 Support: if you find any problems with this module, email / tweet / open issue on Github
 
-[ci-image]: https://travis-ci.org/bahmutov/jshint-solid.png?branch=master
-[ci-url]: https://travis-ci.org/bahmutov/jshint-solid
-[nodei.co]: https://nodei.co/npm/jshint-solid.png?downloads=true
-[dependencies-image]: https://david-dm.org/bahmutov/jshint-solid.png
-[dependencies-url]: https://david-dm.org/bahmutov/jshint-solid
-[devdependencies-image]: https://david-dm.org/bahmutov/jshint-solid/dev-status.png
-[devdependencies-url]: https://david-dm.org/bahmutov/jshint-solid#info=devDependencies
+[jshint-solid-icon]: https://nodei.co/npm/jshint-solid.png?downloads=true
+[jshint-solid-url]: https://npmjs.org/package/jshint-solid
+[jshint-solid-ci-image]: https://travis-ci.org/bahmutov/jshint-solid.png?branch=master
+[jshint-solid-ci-url]: https://travis-ci.org/bahmutov/jshint-solid
+[jshint-solid-dependencies-image]: https://david-dm.org/bahmutov/jshint-solid.png
+[jshint-solid-dependencies-url]: https://david-dm.org/bahmutov/jshint-solid
+[jshint-solid-devdependencies-image]: https://david-dm.org/bahmutov/jshint-solid/dev-status.png
+[jshint-solid-devdependencies-url]: https://david-dm.org/bahmutov/jshint-solid#info=devDependencies
 [endorse-image]: https://api.coderwall.com/bahmutov/endorsecount.png
 [endorse-url]: https://coderwall.com/bahmutov
