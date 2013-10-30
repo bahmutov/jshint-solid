@@ -17,22 +17,22 @@ function getAllSettings() {
   var filename = path.join(__dirname, 'allJsHintSettings.js');
   var allSettingsSrc = fs.readFileSync(filename, 'utf-8');
   var withoutComments = removeComments(allSettingsSrc);
-  check.verifyUnemptyString(withoutComments, 'expected string without comments');
+  check.verify.unemptyString(withoutComments, 'expected string without comments');
   var allSettings = JSON.parse(withoutComments);
   return allSettings;
 }
 
 // returns percent 0 - no valid settings, 100 - all settings specified
 function settingsPercentage(projectJshintSettings) {
-  check.verifyObject(projectJshintSettings, 'expected jshint object');
+  check.verify.object(projectJshintSettings, 'expected jshint object');
 
   //console.log('looking at jshint settings\n' +
   //  JSON.stringify(projectJshintSettings, null, 2));
 
   var allSettings = getAllSettings();
-  check.verifyObject(allSettings, 'could not get all jshint settings');
+  check.verify.object(allSettings, 'could not get all jshint settings');
   var totalSettings = Object.keys(allSettings).length;
-  check.verifyPositiveNumber(totalSettings, 'epected all settings to have properties');
+  check.verify.positiveNumber(totalSettings, 'epected all settings to have properties');
 
   Object.keys(projectJshintSettings).forEach(function (key) {
     if (typeof allSettings[key] === 'undefined') {
@@ -60,11 +60,11 @@ function printMessage(quality, filename) {
 function jshintQuality(filename) {
   var jshintFilename = filename || './.jshintrc';
   if (!fs.existsSync(jshintFilename)) {
-    check.verifyUnemptyString(jshintFilename, 'expected jshint filename');
+    check.verify.unemptyString(jshintFilename, 'expected jshint filename');
     throw new Error('Cannot find jshint settings file ' + jshintFilename);
   }
   var settings = JSON.parse(fs.readFileSync(jshintFilename, 'utf-8'));
-  check.verifyObject(settings, 'expected jshint settings object');
+  check.verify.object(settings, 'expected jshint settings object');
 
   var quality = settingsPercentage(settings);
   console.assert(quality >= 0 && quality <= 100, 'invalid quality value ' + quality);
