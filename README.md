@@ -28,6 +28,10 @@ Using from external projects
     var quality = measure('./jshintrc');
     // quality is between 0 and 100
 
+## Why?
+
+See my [Tightening JsHint](http://bahmutov.calepin.co/tightening-jshint.html) blog post.
+
 ## Small print
 
 Author: Gleb Bahmutov &copy; 2013
