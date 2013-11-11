@@ -28,6 +28,8 @@ Using from external projects
     var quality = measure('./jshintrc');
     // quality is between 0 and 100
 
+There is a [grunt-jshint-solid](https://github.com/bahmutov/grunt-jshint-solid) plugin.
+
 ## Why?
 
 See my [Tightening JsHint](http://bahmutov.calepin.co/tightening-jshint.html) blog post.
