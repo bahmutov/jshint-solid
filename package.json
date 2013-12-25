@@ -18,8 +18,8 @@
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "check-types": "~1.1.0",
-    "string": "~1.6.0"
+    "check-types": "~1.1.1",
+    "string": "~1.7.0"
   },
   "repository": {
     "type": "git",
