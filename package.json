@@ -19,7 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "check-types": "~1.1.1",
-    "string": "~1.7.0"
+    "string": "~1.8.0"
   },
   "repository": {
     "type": "git",
