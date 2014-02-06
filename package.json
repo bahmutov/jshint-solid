@@ -18,7 +18,8 @@
     "grunt-contrib-jshint": "~0.8.0",
     "grunt-nice-package": "0.2.1",
     "jshint-stylish": "~0.1.5",
-    "matchdep": "~0.3.0"
+    "matchdep": "~0.3.0",
+    "pre-git": "0.0.15"
   },
   "homepage": "https://github.com/bahmutov/jshint-solid",
   "keywords": [
@@ -29,6 +30,10 @@
   ],
   "license": "MIT",
   "main": "index.js",
+  "pre-commit": [
+    "grunt",
+    "npm test"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/bahmutov/jshint-solid.git"
