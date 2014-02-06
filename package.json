@@ -1,7 +1,7 @@
 {
   "name": "jshint-solid",
   "description": "Tells how solid your jshint settings are",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "bin": {
     "jshint-solid": "./index.js"
