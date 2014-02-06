@@ -35,6 +35,8 @@ function settingsPercentage(projectJshintSettings) {
   verify.positiveNumber(totalSettings, 'epected all settings to have properties');
 
   Object.keys(projectJshintSettings).forEach(function (key) {
+    if (key === 'predef') { return; }
+
     if (typeof allSettings[key] === 'undefined') {
       console.error('unknown setting', key, projectJshintSettings[key]);
     }
