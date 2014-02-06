@@ -25,5 +25,8 @@
   "globals": "additional predefined global variables",
   "globals": {},
 
-  "node": true
+  "strict": false,
+
+  "node": true,
+  "predef": []
 }
