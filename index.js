@@ -1,5 +1,13 @@
 #!/usr/bin/env node
 
+(function checkForUpdates() {
+  var updateNotifier = require('update-notifier');
+  var notifier = updateNotifier();
+  if (notifier.update) {
+    notifier.notify();
+  }
+}());
+
 var fs = require('fs');
 var path = require('path');
 var verify = require('check-types').verify;

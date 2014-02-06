@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "check-types": "~1.1.1",
-    "string": "~1.8.0"
+    "string": "~1.8.0",
+    "update-notifier": "~0.1.7"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
