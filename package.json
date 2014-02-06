@@ -1,38 +1,39 @@
 {
   "name": "jshint-solid",
-  "version": "0.0.3",
   "description": "Tells how solid your jshint settings are",
-  "main": "index.js",
+  "version": "0.0.3",
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "bin": {
     "jshint-solid": "./index.js"
   },
-  "scripts": {
-    "test": "node ./index.js"
+  "bugs": {
+    "url": "https://github.com/bahmutov/jshint-solid/issues"
   },
+  "dependencies": {
+    "check-types": "~1.1.1",
+    "string": "~1.8.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-nice-package": "0.2.1",
+    "jshint-stylish": "~0.1.5",
+    "matchdep": "~0.3.0"
+  },
+  "homepage": "https://github.com/bahmutov/jshint-solid",
   "keywords": [
     "jshint",
     "solid",
     "quality",
     "measurement"
   ],
-  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "check-types": "~1.1.1",
-    "string": "~1.8.0"
-  },
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/bahmutov/jshint-solid.git"
   },
-  "bugs": {
-    "url": "https://github.com/bahmutov/jshint-solid/issues"
-  },
-  "devDependencies": {
-    "jshint-stylish": "~0.1.5",
-    "matchdep": "~0.3.0",
-    "grunt-nice-package": "~0.2.0",
-    "grunt": "~0.4.2",
-    "grunt-contrib-jshint": "~0.8.0"
+  "scripts": {
+    "test": "node ./index.js"
   }
 }
