@@ -23,5 +23,7 @@
   "eqnull": true,
 
   "globals": "additional predefined global variables",
-  "globals": {}
+  "globals": {},
+
+  "node": true
 }

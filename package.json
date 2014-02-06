@@ -27,5 +27,12 @@
   },
   "bugs": {
     "url": "https://github.com/bahmutov/jshint-solid/issues"
+  },
+  "devDependencies": {
+    "jshint-stylish": "~0.1.5",
+    "matchdep": "~0.3.0",
+    "grunt-nice-package": "~0.2.0",
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0"
   }
 }
