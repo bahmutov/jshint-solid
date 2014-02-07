@@ -11,5 +11,6 @@ gt.test('basics', function () {
 gt.test('.jshintrc', function () {
   var filename = join(__dirname, '../.jshintrc');
   var grade = solid(filename);
+  gt.equal(typeof grade, 'number', 'returns number');
   gt.ok(grade > 0 && grade < 100, 'invalid jshint grade', grade);
 });

@@ -43,7 +43,7 @@ function settingsPercentage(projectJshintSettings) {
 
   var specifiedSettings = Object.keys(projectJshintSettings).length;
 
-  return (specifiedSettings / totalSettings * 100).toPrecision(2);
+  return +(specifiedSettings / totalSettings * 100).toPrecision(2);
 }
 
 function printMessage(quality, filename) {
