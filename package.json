@@ -17,6 +17,7 @@
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-jshint": "~0.8.0",
+    "grunt-deps-ok": "~0.1.7",
     "grunt-nice-package": "0.2.1",
     "gt": "~0.8.33",
     "jshint-stylish": "~0.1.5",
