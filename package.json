@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "check-types": "~1.1.1",
-    "string": "~1.8.0",
+    "strip-json-comments": "~0.1.1",
     "update-notifier": "~0.1.7"
   },
   "devDependencies": {

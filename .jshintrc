@@ -22,8 +22,7 @@
   "eqnull": "Tolerate use of `== null`",
   "eqnull": true,
 
-  "globals": "additional predefined global variables",
-  "globals": {},
+  "globals": {}, // additional predefined global variables
 
   "strict": false,
 

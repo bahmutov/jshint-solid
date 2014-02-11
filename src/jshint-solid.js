@@ -2,15 +2,7 @@ var read = require('fs').readFileSync;
 var exists = require('fs').existsSync;
 var join = require('path').join;
 var verify = require('check-types').verify;
-var S = require('string');
-
-function removeComments(src) {
-  var lines = S(src).lines();
-  lines = lines.map(function (line) {
-    return line.replace(/\/\/\ [\w\W]*/, '').trim();
-  });
-  return lines.join('\n');
-}
+var removeComments = require('strip-json-comments');
 
 function getAllSettings() {
   var filename = join(__dirname, 'allJsHintSettings.js');
@@ -64,7 +56,7 @@ function jshintQuality(filename) {
     verify.unemptyString(jshintFilename, 'expected jshint filename');
     throw new Error('Cannot find jshint settings file ' + jshintFilename);
   }
-  var settings = JSON.parse(read(jshintFilename, 'utf-8'));
+  var settings = JSON.parse(removeComments(read(jshintFilename, 'utf8')));
   verify.object(settings, 'expected jshint settings object');
 
   var quality = settingsPercentage(settings);
