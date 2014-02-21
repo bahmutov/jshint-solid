@@ -43,8 +43,9 @@
     "url": "git://github.com/bahmutov/jshint-solid.git"
   },
   "scripts": {
-    "test": "npm run unit && npm run execute",
+    "test": "npm run unit && npm run execute && npm run coveralls",
     "execute": "node ./index.js",
-    "unit": "node node_modules/gt test/*.js"
+    "unit": "node node_modules/gt test/*.js",
+    "coveralls": "cat cover/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   }
 }
