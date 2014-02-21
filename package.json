@@ -15,6 +15,7 @@
     "update-notifier": "~0.1.7"
   },
   "devDependencies": {
+    "coveralls": "~2.8.0",
     "grunt": "~0.4.2",
     "grunt-contrib-jshint": "~0.8.0",
     "grunt-deps-ok": "~0.1.7",
@@ -22,8 +23,7 @@
     "gt": "~0.8.33",
     "jshint-stylish": "~0.1.5",
     "matchdep": "~0.3.0",
-    "pre-git": "0.0.15",
-    "coveralls": "~2.8.0"
+    "pre-git": "0.0.15"
   },
   "homepage": "https://github.com/bahmutov/jshint-solid",
   "keywords": [

@@ -5,6 +5,7 @@ How solid is your jshint settings file? Does it specify all settings?
 [![NPM][jshint-solid-icon]][jshint-solid-url]
 
 [![Build status][jshint-solid-ci-image]][jshint-solid-ci-url]
+[![Coverage Status][jshint-solid-coverage-image]][jshint-solid-coverage-url]
 [![dependencies][jshint-solid-dependencies-image]][jshint-solid-dependencies-url]
 [![devdependencies][jshint-solid-devdependencies-image]][jshint-solid-devdependencies-url]
 [![endorse][endorse-image]][endorse-url]
@@ -46,6 +47,8 @@ Support: if you find any problems with this module, email / tweet / open issue o
 [jshint-solid-url]: https://npmjs.org/package/jshint-solid
 [jshint-solid-ci-image]: https://travis-ci.org/bahmutov/jshint-solid.png?branch=master
 [jshint-solid-ci-url]: https://travis-ci.org/bahmutov/jshint-solid
+[jshint-solid-coverage-image]: https://coveralls.io/repos/bahmutov/jshint-solid/badge.png
+[jshint-solid-coverage-url]: https://coveralls.io/r/bahmutov/jshint-solid
 [jshint-solid-dependencies-image]: https://david-dm.org/bahmutov/jshint-solid.png
 [jshint-solid-dependencies-url]: https://david-dm.org/bahmutov/jshint-solid
 [jshint-solid-devdependencies-image]: https://david-dm.org/bahmutov/jshint-solid/dev-status.png
