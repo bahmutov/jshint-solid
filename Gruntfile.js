@@ -15,6 +15,7 @@ module.exports = function(grunt) {
     'nice-package': {
       all: {
         options: {
+          blankLine: true
         }
       }
     }
