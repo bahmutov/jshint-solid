@@ -12,18 +12,21 @@
   "dependencies": {
     "check-types": "1.3.2",
     "strip-json-comments": "1.0.1",
-    "update-notifier": "~0.1.7"
+    "update-notifier": "0.1.7"
   },
   "devDependencies": {
     "coveralls": "2.11.1",
     "grunt": "0.4.5",
     "grunt-contrib-jshint": "0.10.0",
     "grunt-deps-ok": "0.5.1",
-    "grunt-nice-package": "~0.2.2",
+    "grunt-nice-package": "0.9.1",
     "gt": "0.8.41",
     "jshint-stylish": "0.4.0",
-    "matchdep": "~0.3.0",
+    "matchdep": "0.3.0",
     "pre-git": "0.0.16"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
   },
   "homepage": "https://github.com/bahmutov/jshint-solid",
   "keywords": [
@@ -49,3 +52,4 @@
     "coveralls": "cat cover/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   }
 }
+
