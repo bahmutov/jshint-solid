@@ -14,3 +14,10 @@ gt.test('.jshintrc', function () {
   gt.equal(typeof grade, 'number', 'returns number');
   gt.ok(grade > 0 && grade < 100, 'invalid jshint grade', grade);
 });
+
+gt.test('.jshintrc with comments', function () {
+  var filename = join(__dirname, './with-comments/.jshintrc');
+  var grade = solid(filename);
+  gt.equal(typeof grade, 'number', 'returns number');
+  gt.ok(grade > 0 && grade < 30, 'invalid jshint grade', grade);
+});
