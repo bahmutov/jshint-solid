@@ -1,11 +1,14 @@
 #!/usr/bin/env node
 
+var pkg = require('./package.json');
+
 (function checkForUpdates() {
   var updateNotifier = require('update-notifier');
-  var notifier = updateNotifier();
-  if (notifier.update) {
-    notifier.notify();
-  }
+  updateNotifier({
+    pkg: pkg,
+    name: pkg.name,
+    version: pkg.version
+  }).notify();
 }());
 
 var jshintSolid = require('./src/jshint-solid');
@@ -19,7 +22,6 @@ if (module.parent) {
     console.log('trying .jshintrc filename');
     jshintrc = '.jshintrc';
     if (!exists(jshintrc)) {
-      var pkg = require('./package.json');
       console.error('usage', pkg.name, '<.jshintrc filename>');
       process.exit(-1);
     }
